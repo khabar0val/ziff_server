@@ -4,7 +4,7 @@ from src.models.auth import sign_up
 
 app = Flask(__name__)
 
-@app,route('/signup', methods = ['POST'])
+@app.route('/signup', methods = ['POST'])
 def signup(username, password):
     if request.method == 'POST':
         username = request.form['username']
