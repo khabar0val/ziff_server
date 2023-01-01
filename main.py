@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 
-from src.models.auth import sign_up
+from ..db.workers.auth import sign_up
 
 app = Flask(__name__)
 
